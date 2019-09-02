@@ -1,0 +1,11 @@
+<%= form_with(model: @list, local: true, class: "ui form") do |f| %>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name, class: "input", required: true, autofocus: true %>
+  </div>
+  <div class="field">
+    <%= f.label :priority %>
+    <%= f.text_field :priority, class: "input", required: true %>
+  </div>
+ <%= f.submit nil, class: "ui green button" %>
+<% end %>

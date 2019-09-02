@@ -1,0 +1,7 @@
+<%= form_with(model: @board, local: true, class: "ui form") do |f| %>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name, required: true, autofocus: true %>
+  </div>
+ <%= f.submit nil, class: "ui blue button" %>
+<% end %>
